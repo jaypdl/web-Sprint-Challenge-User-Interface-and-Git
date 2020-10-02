@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/**END RESET**/
 
 * {
     box-sizing: border-box;
@@ -69,6 +70,32 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    /* border:2px solid black; */
+}
+
+div.topHeader {
+    display:flex;
+    align-items: flex-end;
+    flex-grow: 2;
+    /* border: 2px solid blue; */
+    margin: 2.5% 0;
+}
+div.topHeader nav{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    font-size: 14px;
+    /* border: 2px solid red; */
+}
+div.topHeader nav a{
+    text-decoration: none;
+}
+header div.headerImage{
+    margin: 5% 0 2.5% 0;
 }
 
 .top-content {
@@ -110,6 +137,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes div.box:nth-of-type(1){
+    background-color: teal;
+}
+
+.middle-content .boxes div.box:nth-of-type(2){
+    background-color: gold;
+}
+
+.middle-content .boxes div.box:nth-of-type(3){
+    background-color: cadetblue;
+}
+
+.middle-content .boxes div.box:nth-of-type(4){
+    background-color: coral;
+}
+
+.middle-content .boxes div.box:nth-of-type(5){
+    background-color: crimson;
+}
+
+.middle-content .boxes div.box:nth-of-type(6){
+    background-color: forestgreen;
+}
+
+.middle-content .boxes div.box:nth-of-type(7){
+    background-color: darkorchid;
+}
+
+.middle-content .boxes div.box:nth-of-type(8){
+    background-color: hotpink;
+}
+
+.middle-content .boxes div.box:nth-of-type(9){
+    background-color: indigo;
+}
+
+.middle-content .boxes div.box:nth-of-type(10){
+    background-color: dodgerblue;
 }
 
 .bottom-content {
